@@ -1,13 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.header-bg-gradient {
+  background: rgb(205, 45, 253);
+  background: linear-gradient(
+    13deg,
+    rgba(205, 45, 253, 1) 0%,
+    rgba(9, 10, 116, 1) 13%,
+    rgba(0, 0, 0, 1) 37%,
+    rgba(0, 0, 0, 1) 59%,
+    rgba(0, 0, 0, 1) 71%,
+    rgba(37, 31, 156, 1) 87%,
+    rgba(148, 17, 223, 1) 100%
+  );
+}
+
+.ethCard-bg-gradient {
+  background: rgb(22, 230, 189);
+  background: linear-gradient(
+    263deg,
+    rgba(22, 230, 189, 1) 0%,
+    rgba(24, 100, 252, 1) 54%,
+    rgba(205, 45, 253, 1) 100%
+  );
+}
+
+.transaction-bg-gradient {
+  background: rgb(205, 45, 253);
+  background: linear-gradient(
+    13deg,
+    rgba(205, 45, 253, 1) 0%,
+    rgba(15, 23, 21, 1) 12%,
+    rgba(15, 23, 21, 1) 68%,
+    rgba(15, 23, 21, 1) 68%,
+    rgba(9, 12, 54, 0.993) 100%
+  );
+}
+
+.form-bg-gradient {
+  background: rgb(238, 214, 255);
+  background: linear-gradient(
+    297deg,
+    rgba(238, 214, 255, 1) 0%,
+    rgba(190, 255, 244, 1) 50%
+  );
+}
+
+.button {
+  background: transparent;
+  background-image: linear-gradient(90deg, white, white),
+    linear-gradient(
+      263deg,
+      rgba(22, 230, 189, 1) 0%,
+      rgba(24, 100, 252, 1) 54%,
+      rgba(205, 45, 253, 1) 100%
+    );
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  border: 5px solid transparent;
+  border-radius: 1.75rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: transparent;
+  background-image: linear-gradient(
+      90deg,
+      rgb(205, 45, 253, 1),
+      rgb(22, 230, 189, 1)
+    ),
+    linear-gradient(
+      263deg,
+      rgba(22, 230, 189, 1) 0%,
+      rgba(24, 100, 252, 1) 54%,
+      rgba(205, 45, 253, 1) 100%
+    );
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  border: 5px solid transparent;
+  border-radius: 1.75rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.text-gradient {
+  background: #ffffff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #f6b1fb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #f6b1fb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
