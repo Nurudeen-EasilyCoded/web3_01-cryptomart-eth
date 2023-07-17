@@ -41,7 +41,7 @@ export const TransactionProvider = ({ children }) => {
   const getAllTransactions = async () => {
     try {
       if (!ethereum)
-        return alert('Please install MetaMask and connect your wallet first');
+        return alert('(PC ONLY) Please install MetaMask and connect your wallet');
       const transactionContract = getEthereumContract();
       const availableTransactions =
         await transactionContract.getAllTransactions();
@@ -66,7 +66,7 @@ export const TransactionProvider = ({ children }) => {
   const checkIfWalletIsConnected = async () => {
     try {
       if (!ethereum)
-        return alert('Please install MetaMask and connect your wallet first');
+        return alert('(PC ONLY) Please install MetaMask and connect your wallet');
       const accounts = await ethereum.request({ method: 'eth_accounts' });
       
       if (accounts.length > 0) {
@@ -95,7 +95,7 @@ export const TransactionProvider = ({ children }) => {
   const connectWallet = async () => {
     try {
       if (!ethereum)
-        return alert('Please install MetaMask and connect your wallet first');
+        return alert('(PC ONLY) Please install MetaMask and connect your wallet');
       const accounts = await ethereum.request({
         method: 'eth_requestAccounts',
       });
@@ -109,7 +109,7 @@ export const TransactionProvider = ({ children }) => {
   const sendTransaction = async () => {
     try {
       if (!ethereum)
-        return alert('Please install MetaMask and connect your wallet first');
+        return alert('(PC ONLY) Please install MetaMask and connect your wallet');
 
       const { addressTo, amount, message } = formValue;
       const transactionContract = getEthereumContract();
